@@ -65,7 +65,7 @@ def main():
     # 3. save results
     ########################################################
     if args.CSV != "":
-        df = pd.DataFrame(traj, columns = ['step', 'sequence', 'score'])
+        df = pd.DataFrame(traj, columns = ['step', 'sequence', 'score', 'total_mutations'])
         df.to_csv(args.CSV, index = None)
 
     if args.FAS != "":
